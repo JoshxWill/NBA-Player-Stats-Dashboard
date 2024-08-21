@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Player Stats Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>NBA Player Stats Dashboard</h1>
+        </header>
+
+        <section class="player-selection">
+            <label for="playerSelect">Select a Player:</label>
+            <select id="playerSelect">
+                <!-- Players will be dynamically loaded here -->
+            </select>
+        </section>
+
+        <section class="player-stats">
+            <h2 id="playerName">Player Name</h2>
+            <div class="stats">
+                <div class="stat">Points: <span id="points"></span></div>
+                <div class="stat">Rebounds: <span id="rebounds"></span></div>
+                <div class="stat">Assists: <span id="assists"></span></div>
+                <!-- More stats can be added here -->
+            </div>
+        </section>
+
+        <section class="player-chart">
+            <canvas id="statsChart"></canvas>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
